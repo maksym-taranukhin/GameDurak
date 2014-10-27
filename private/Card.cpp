@@ -1,4 +1,4 @@
-#include "Card.h"
+#include "../Card.h"
 
 namespace NGameDurak
 {
@@ -91,16 +91,16 @@ namespace NGameDurak
         mCardSet[pos + 3].mSuit = (char)6;
     }
 
-    CPack6::CPack6() : CCardSet(6), mFreeSpace(6)
+    CPlayerPack::CPlayerPack() : CCardSet(0)
     {
 
     }
     
-    size_t CPack6::addCard(const Card& card)
+    size_t CPlayerPack::addCard(const Card& card)
     {
-        mCardSet[6 - mFreeSpace] = card;
+        mCardSet.push_back(card);
 
-        return --mFreeSpace;
+        return mCardSet.size();
     }
 
 } // namespace NGameDurak

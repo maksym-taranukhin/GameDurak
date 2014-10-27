@@ -8,8 +8,8 @@ using namespace NGameDurak;
 int main()
 {
     CGameDurak game;
-    const size_t numberOfHumanPlayers = 1;
-    const size_t numberOfAIPlayers = 1;
+    const size_t numberOfHumanPlayers = 2;
+    const size_t numberOfAIPlayers = 0;
 
     CDefinition::EResult res = game.create(numberOfHumanPlayers, numberOfAIPlayers);
     if (res != CDefinition::EResult::OK)

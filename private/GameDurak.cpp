@@ -1,6 +1,6 @@
-#include "GameDurak.h"
-#include "PlayerAI.h"
-#include "PlayerHuman.h"
+#include "../GameDurak.h"
+#include "../PlayerAI.h"
+#include "../PlayerHuman.h"
 
 namespace NGameDurak
 {
@@ -26,9 +26,10 @@ namespace NGameDurak
         
         mPack.shake();
 
-        for (size_t i = 0; i < numberOfHumanPlayers; ++i)
+        for (size_t i = 0; i < totalPlayers; ++i)
         {
-            while (mPlayers[i]->addCard(mPack.takeOneCard()));       
+            for (size_t j = 0; j < 6; ++j)
+                mPlayers[i]->addCard(mPack.takeOneCard());
         }
 
         return CDefinition::EResult::OK;

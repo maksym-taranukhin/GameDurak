@@ -1,4 +1,4 @@
-#include "HumanMovementController.h"
+#include "../HumanMovementController.h"
 
 namespace NGameDurak
 {
@@ -10,10 +10,10 @@ namespace NGameDurak
     {
     }
 
-    const Card& HumanMovementController::getCardForMovement()
+    const Card& HumanMovementController::getCardForMovement(const CPlayerPack& pack)
     {
         // TODO: resive a player's pack here for decidion!!!
 
-        return Card();
+        return pack[0];
     }
 }

@@ -10,7 +10,7 @@ namespace NGameDurak
 
         ~HumanMovementController();
 
-        const Card& getCardForMovement();
+        const Card& getCardForMovement(const CPlayerPack& pack);
     };
 
 }

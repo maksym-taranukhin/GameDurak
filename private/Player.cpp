@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../Player.h"
 
 namespace NGameDurak
 {

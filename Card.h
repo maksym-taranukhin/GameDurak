@@ -67,18 +67,17 @@ namespace NGameDurak
         Card mTrump;
     };
 
-    class CPack6 : public CCardSet
+    class CPlayerPack : public CCardSet
     {
     public:
 
-        CPack6();
+        CPlayerPack();
 
         size_t addCard(const Card& card);
 
-        size_t emount() const { return 6 - mFreeSpace; }
+        size_t emount() const { return mCardSet.size(); }
 
     private:
 
-        size_t mFreeSpace;
     };
 } //namespace NGameDurak

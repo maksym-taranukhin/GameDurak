@@ -1,4 +1,4 @@
-#include "PlayerAI.h"
+#include "../PlayerAI.h"
 
 namespace NGameDurak
 {

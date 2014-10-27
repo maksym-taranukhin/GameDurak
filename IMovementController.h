@@ -6,6 +6,6 @@ namespace NGameDurak
     class IMovementController
     {
     public:
-        virtual const Card& getCardForMovement() = 0;
+        virtual const Card& getCardForMovement(const CPlayerPack& pack) = 0;
     };
 }

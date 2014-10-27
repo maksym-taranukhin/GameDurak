@@ -19,7 +19,7 @@ namespace NGameDurak
 
     protected:
 
-        CPack6 mCardSet;    // TODO: Can be more than 6 card!!!
+        CPlayerPack mCardSet;    // TODO: Can be more than 6 card!!!
     };
 
 }

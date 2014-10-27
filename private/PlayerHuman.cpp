@@ -1,4 +1,4 @@
-#include "PlayerHuman.h"
+#include "../PlayerHuman.h"
 
 namespace NGameDurak
 {
@@ -12,7 +12,7 @@ namespace NGameDurak
 
     CDefinition::EResult CPlayerHuman::makeAMove()
     {
-        const Card& card = mMoventController->getCardForMovement();
+        const Card& card = mMoventController->getCardForMovement(mCardSet);
 
         for (size_t i = 0; i < mCardSet.emount(); ++i)
         {
