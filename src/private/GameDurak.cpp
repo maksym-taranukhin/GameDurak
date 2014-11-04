@@ -41,7 +41,12 @@ namespace NGameDurak
 
         for (size_t i = 0; i < mPlayers.size(); ++i)
         {
-            mPlayers[i]->makeAMove();
+            Card card;
+
+            if (CDefinition::EResult::OK == mPlayers[i]->makeAMove(card))
+            {
+                std::cout << "Player " << i + 1 << "made the move with card \t" << card.mRank << card.mSuit << "\n";
+            }
         }
 
     }

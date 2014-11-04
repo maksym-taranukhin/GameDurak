@@ -11,7 +11,7 @@ namespace NGameDurak
 
         ~CPlayerAI();
 
-        CDefinition::EResult makeAMove();
+        CDefinition::EResult makeAMove(Card & card);
 
     private:
 

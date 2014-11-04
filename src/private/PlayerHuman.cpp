@@ -1,18 +1,20 @@
 #include "../PlayerHuman.h"
+#include "../HumanMovementController.h"
 
 namespace NGameDurak
 {
-    CPlayerHuman::CPlayerHuman()
+    CPlayerHuman::CPlayerHuman() : mMoventController(new CHumanMovementController)
     {
     }
     
     CPlayerHuman::~CPlayerHuman()
     {
+        delete mMoventController;
     }
 
-    CDefinition::EResult CPlayerHuman::makeAMove()
+    CDefinition::EResult CPlayerHuman::makeAMove(Card & card)
     {
-        const Card& card = mMoventController->getCardForMovement(mCardSet);
+        card = mMoventController->getCardForMovement(mCardSet);
 
         for (size_t i = 0; i < mCardSet.emount(); ++i)
         {

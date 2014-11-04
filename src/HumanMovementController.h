@@ -3,12 +3,12 @@
 
 namespace NGameDurak
 {
-    class HumanMovementController : public IMovementController
+    class CHumanMovementController : public IMovementController
     {
     public:
-        HumanMovementController();
+        CHumanMovementController();
 
-        ~HumanMovementController();
+        ~CHumanMovementController();
 
         const Card& getCardForMovement(const CPlayerPack& pack);
     };

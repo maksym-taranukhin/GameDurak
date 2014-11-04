@@ -2,17 +2,17 @@
 
 namespace NGameDurak
 {
-    HumanMovementController::HumanMovementController()
+    CHumanMovementController::CHumanMovementController()
     {
     }
 
-    HumanMovementController::~HumanMovementController()
+    CHumanMovementController::~CHumanMovementController()
     {
     }
 
-    const Card& HumanMovementController::getCardForMovement(const CPlayerPack& pack)
+    const Card& CHumanMovementController::getCardForMovement(const CPlayerPack& pack)
     {
-        // TODO: resive a player's pack here for decidion!!!
+        // TODO: Show player card pack and offer to chose the card
 
         return pack[0];
     }

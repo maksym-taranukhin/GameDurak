@@ -10,7 +10,7 @@ namespace NGameDurak
     {
     }
 
-    CDefinition::EResult CPlayerAI::makeAMove()
+    CDefinition::EResult CPlayerAI::makeAMove(Card & card)
     {
 
         //for (size_t i = 0; i < mCardSet.emount(); ++i)

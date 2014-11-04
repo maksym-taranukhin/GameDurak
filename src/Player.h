@@ -15,11 +15,11 @@ namespace NGameDurak
 
         const Card getLeastCard() const;
 
-        virtual CDefinition::EResult makeAMove() = 0;
+        virtual CDefinition::EResult makeAMove(Card & card) = 0;
 
     protected:
 
-        CPlayerPack mCardSet;    // TODO: Can be more than 6 card!!!
+        CPlayerPack mCardSet;
     };
 
 }
